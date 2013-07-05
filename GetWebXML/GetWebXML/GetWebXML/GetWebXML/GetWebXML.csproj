@@ -54,10 +54,10 @@
     </Reference>
     <Reference Include="Microsoft.Phone.Interop" />
     <Reference Include="SLWpVisifire.Charts">
-      <HintPath>..\..\..\windows_phone_visifire_v5.1.1-0_trial\Binaries\SLWpVisifire.Charts.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\windows_phone_visifire_v5.1.1-0_trial\Binaries\SLWpVisifire.Charts.dll</HintPath>
     </Reference>
     <Reference Include="SLWpVisifire.Gauges">
-      <HintPath>..\..\..\windows_phone_visifire_v5.1.1-0_trial\Binaries\SLWpVisifire.Gauges.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\windows_phone_visifire_v5.1.1-0_trial\Binaries\SLWpVisifire.Gauges.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
