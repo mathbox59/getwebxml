@@ -1,0 +1,78 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="GetWebXML.View.ColumnChart"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+
+    <vc:Chart xmlns:vc="clr-namespace:Visifire.Charts;assembly=SLWpVisifire.Charts"
+ Theme="Theme5" Name="chart">
+
+        <vc:Chart.Titles>
+            <vc:Title Text="PM2.5值趋势图"/>
+        </vc:Chart.Titles>
+
+        <vc:Chart.AxesX>
+            <vc:Axis StartFromZero="true" AxisMaximum="6">
+                <vc:Axis.Grids>
+                    <vc:ChartGrid LineThickness="0.5"/>
+                </vc:Axis.Grids>
+            </vc:Axis>
+        </vc:Chart.AxesX>
+
+        <vc:Chart.AxesY>
+            <vc:Axis>
+                <vc:Axis.Grids>
+                    <vc:ChartGrid LineThickness="0.5" LineStyle="Solid"/>
+                </vc:Axis.Grids>
+            </vc:Axis>
+        </vc:Chart.AxesY>
+
+        <vc:Chart.PlotArea>
+            <vc:PlotArea BorderThickness="0,0,1,0" BorderColor="Gray"/>
+        </vc:Chart.PlotArea>
+        <!--注释掉的是数据的XMAL实现-->
+        <vc:Chart.Series>
+            <vc:DataSeries RenderAs="Line" LegendText="Company A" Color="#3399ff" LightingEnabled="False"
+                   MarkerSize="15" Name="ds">
+                <vc:DataSeries.DataPoints>
+                    <vc:DataPoint XValue="0" AxisXLabel="2001" YValue="1"/>
+                    <vc:DataPoint XValue="1" AxisXLabel="2002" YValue="0.8"/>
+                    <vc:DataPoint XValue="2" AxisXLabel="2003" YValue="1.8"/>
+                    <vc:DataPoint XValue="3" AxisXLabel="2004" YValue="2.5"/>
+                    <vc:DataPoint XValue="4" AxisXLabel="2005" YValue="3.1"/>
+                    <vc:DataPoint XValue="5" AxisXLabel="2006" YValue="4.5"/>
+                    <vc:DataPoint XValue="6" AxisXLabel="2007" YValue="5.8"/>
+                    <vc:DataPoint XValue="7" AxisXLabel="2008" YValue="7.1"/>
+                    <vc:DataPoint XValue="8" AxisXLabel="2009" YValue="6.5"/>
+                    <vc:DataPoint XValue="9" AxisXLabel="2010" YValue="6.8"/>
+                </vc:DataSeries.DataPoints>
+            </vc:DataSeries>
+            <vc:DataSeries RenderAs="Line" LegendText="Company B" Color="#66cc00" LightingEnabled="False"
+                   MarkerSize="15">
+                <vc:DataSeries.DataPoints>
+                    <vc:DataPoint XValue="0" AxisXLabel="2001" YValue="-2"/>
+                    <vc:DataPoint XValue="1" AxisXLabel="2002" YValue="-1"/>
+                    <vc:DataPoint XValue="2" AxisXLabel="2003" YValue="3.2"/>
+                    <vc:DataPoint XValue="3" AxisXLabel="2004" YValue="4"/>
+                    <vc:DataPoint XValue="4" AxisXLabel="2005" YValue="4.2"/>
+                    <vc:DataPoint XValue="5" AxisXLabel="2006" YValue="5.9"/>
+                    <vc:DataPoint XValue="6" AxisXLabel="2007" YValue="6.1"/>
+                    <vc:DataPoint XValue="7" AxisXLabel="2008" YValue="6.4"/>
+                    <vc:DataPoint XValue="8" AxisXLabel="2009" YValue="5.2"/>
+                    <vc:DataPoint XValue="9" AxisXLabel="2010" YValue="4.8"/>
+                </vc:DataSeries.DataPoints>
+            </vc:DataSeries>
+        </vc:Chart.Series>
+    </vc:Chart>
+
+</phone:PhoneApplicationPage>
