@@ -29,7 +29,8 @@ namespace GetWebXML
         int a = 0;
         // 构造函数
         public MainPage()
-        {
+        {    //killlllllllllllllllllllllllllllllllllllllllllllllllllll
+            //meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
             InitializeComponent();
             //url = "{\"url\":\"DROPDOWN/DROPDOWN_1\"}";
             //Hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee

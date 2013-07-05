@@ -24,7 +24,7 @@ namespace GetWebXML.View
         {
             // Create new DataSeries
             DataSeries dataSeries = new DataSeries();
-            dataSeries.Foreground
+            //dataSeries.Foreground
         }
     }
 }
