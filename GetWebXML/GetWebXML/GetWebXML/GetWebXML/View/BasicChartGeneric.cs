@@ -25,5 +25,8 @@ namespace GetWebXML.View
             this.right = position.right;
             this.bottom = position.bottom;
         }
+        public BasicChartGeneric()
+        {
+        }
     }
 }

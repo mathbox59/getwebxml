@@ -27,6 +27,8 @@ namespace GetWebXML
         string stringJson;
         string url;
         int a = 0;
+        string lname = "SampleScript.txt";
+        string json4lua;
         // 构造函数
         public MainPage()
         {    //killlllllllllllllllllllllllllllllllllllllllllllllllllll
@@ -37,6 +39,8 @@ namespace GetWebXML
             //Hereeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
             //url = "{\"url\":\"BL/BL_1\"}"; 
             url = "{\"url\":\"LYW/LYW_1\"}";
+            getlua lua = new getlua(lname);
+            json4lua = lua.readlua();
             System.Diagnostics.Debug.WriteLine(url);
             //加密
             url = Encryption_Base64.Base64Code(url);
@@ -116,6 +120,7 @@ namespace GetWebXML
                                     {
                                         case "column":
                                             this.NavigationService.Navigate(new Uri("/View/Columnview.xaml", UriKind.Relative));
+                                            Columnview columnview = new Columnview(nodebasicchart, bcview);  
                                             break;
                                         case "area":
                                             break;

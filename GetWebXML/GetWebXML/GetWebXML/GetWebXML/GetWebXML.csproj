@@ -76,6 +76,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="core\Position.cs" />
+    <Compile Include="getlua.cs" />
     <Compile Include="Parser\Node_Label.cs" />
     <Compile Include="Parser\Node_BasicChart.cs" />
     <Compile Include="Parser\Node_Dropdownlist.cs" />
@@ -133,6 +134,7 @@
     <None Include="packages.config" />
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml" />
+    <None Include="SampleScript.lua" />
     <None Include="Service References\ServiceReference1\Service1.disco" />
     <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
     <None Include="Service References\ServiceReference1\configuration.svcinfo" />
@@ -141,6 +143,7 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="README_FIRST.txt" />
+    <Content Include="SampleScript.txt" />
     <Content Include="ServiceReferences.ClientConfig">
       <SubType>Designer</SubType>
     </Content>
